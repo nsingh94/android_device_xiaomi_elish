@@ -12,10 +12,6 @@ persist.vendor.dpm.feature=1
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
-# IOP
-vendor.iop.enable_prefetch_ofr=1
-vendor.iop.enable_uxe=0
-
 # LMK properties
 ro.lmk.use_minfree_levels=true
 ro.lmk.kill_heaviest_task=true
