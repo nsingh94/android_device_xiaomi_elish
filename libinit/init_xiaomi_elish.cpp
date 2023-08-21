@@ -19,7 +19,7 @@ static const variant_info_t elish_info = {
     .model = "M2105K81AC",
     .build_fingerprint = "Xiaomi/elish/elish:13/RKQ1.211001.001/V14.0.4.0.TKYCNXM:user/release-keys",
 
-    .nfc = true,
+    .nfc = false,
 };
 
 static const std::vector<variant_info_t> variants = {
