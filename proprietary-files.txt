@@ -515,7 +515,3 @@ vendor/etc/thermald-devices.conf
 # Touchscreen firmware
 vendor/firmware/NT36xxx_MP_Setting_Criteria_595C.csv
 vendor/firmware/NT36xxx_MP_Setting_Criteria_5961.csv
-
-# Vibrator firmware
-vendor/firmware/aw8697_haptic.bin
-vendor/firmware/aw8697_rtp_1.bin
