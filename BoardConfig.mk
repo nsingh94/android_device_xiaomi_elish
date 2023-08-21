@@ -25,7 +25,7 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_elish
 TARGET_KERNEL_CONFIG += vendor/xiaomi/elish.config
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := elish,elishin
+TARGET_OTA_ASSERT_DEVICE := elish
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
