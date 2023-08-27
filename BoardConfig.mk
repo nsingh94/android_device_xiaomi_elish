@@ -23,6 +23,7 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_elish
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/xiaomi/elish.config
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
