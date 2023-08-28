@@ -11,7 +11,7 @@ TARGET_IS_VAB := true
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
 # AAPT
-PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_CONFIG := normal large xlarge hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Audio configs
