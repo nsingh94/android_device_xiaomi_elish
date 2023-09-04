@@ -397,8 +397,13 @@ vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
 
 # Display-calibration
+vendor/etc/ltm_config_xiaomi_35_02_0b_video_mode_dual_dsi_cphy_panel.xml
+vendor/etc/ltm_config_xiaomi_42_02_0a_video_mode_dual_dsi_cphy_panel.xml
+vendor/etc/mdss_dsi_k81_35_02_0b_dual_cphy_video_mi.xml
+vendor/etc/mdss_dsi_k81_42_02_0a_dual_cphy_video_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_35_02_0b_video_mode_dual_dsi_cphy_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_02_0a_video_mode_dual_dsi_cphy_panel.xml
+vendor/etc/tunings.txt
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
@@ -642,6 +647,7 @@ vendor/lib64/libhdr_tm.so
 # Display (SDM)
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
+vendor/lib64/libdpps.so
 vendor/lib64/libgame_enhance.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
