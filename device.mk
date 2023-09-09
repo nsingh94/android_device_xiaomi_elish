@@ -96,10 +96,6 @@ endif
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
-# AAPT
-PRODUCT_AAPT_CONFIG := normal large xlarge hdpi xhdpi xxhdpi
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
@@ -151,10 +147,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1600
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -322,9 +314,6 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
