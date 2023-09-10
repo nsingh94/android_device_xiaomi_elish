@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     LineageSystemUIOverlayDevice \
     SystemUIOverlayDevice
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.elish.rc
