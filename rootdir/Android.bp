@@ -58,21 +58,18 @@ soong_config_module_type {
 
 soong_config_string_variable {
     name: "PARTITION_SCHEME",
-    values: ["a", "vab"],
+    values: ["vab"],
 }
 
 xiaomi_kona_rootdir_prebuilt_etc {
     name: "fstab.qcom",
     soong_config_variables: {
         PARTITION_SCHEME: {
-            a: {
-                src: "etc/fstab.qcom",
-            },
             vab: {
                 src: "etc/fstab_AB.qcom",
             },
             conditions_default: {
-                src: "etc/fstab.qcom",
+                src: "etc/fstab_AB.qcom",
             },
         },
     },
