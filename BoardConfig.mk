@@ -98,20 +98,18 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-# TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
+TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig vendor/xiaomi/sm8250-common.config
+TARGET_KERNEL_CONFIG += vendor/xiaomi/elish.config
+
+TARGET_FORCE_PREBUILT_KERNEL := true
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
-TARGET_KERNEL_CONFIG := vendor/elish_user_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/elish
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
-else
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
-TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig vendor/xiaomi/sm8250-common.config
-TARGET_KERNEL_CONFIG += vendor/xiaomi/elish.config
+PRODUCT_COPY_FILES += $(TARGET_PREBUILT_DTB):dtb.img
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(DEVICE_PATH)/prebuilts/modules/,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
 endif
 
 # Lineage Health

@@ -159,6 +159,11 @@ $(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $@
 	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/WCNSS_qcom_cfg.ini
 	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan_mac.bin
+ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
+	@mkdir -p $@/qca6390
+	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/qca6390/WCNSS_qcom_cfg.ini
+	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/qca6390/wlan_mac.bin
+endif
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WIFI_FIRMWARE_SYMLINKS)
 
