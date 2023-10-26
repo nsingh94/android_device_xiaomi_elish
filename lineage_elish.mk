@@ -29,4 +29,4 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := Xiaomi/elish/elish:13/RKQ1.211001.001/V14.0.4.0.TKYCNXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/elish/elish:13/RKQ1.211001.001/V14.0.5.0.TKYCNXM:user/release-keys

@@ -17,7 +17,7 @@ static const variant_info_t elish_info = {
     .device = "elish",
     .marketname = "Xiaomi Pad 5 Pro",
     .model = "M2105K81AC",
-    .build_fingerprint = "Xiaomi/elish/elish:13/RKQ1.211001.001/V14.0.4.0.TKYCNXM:user/release-keys",
+    .build_fingerprint = "Xiaomi/elish/elish:13/RKQ1.211001.001/V14.0.5.0.TKYCNXM:user/release-keys",
 
     .nfc = false,
 };
