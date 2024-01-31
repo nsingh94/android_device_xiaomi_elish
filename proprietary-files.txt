@@ -405,7 +405,15 @@ vendor/etc/qdcm_calib_data_xiaomi_35_02_0b_video_mode_dual_dsi_cphy_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_02_0a_video_mode_dual_dsi_cphy_panel.xml
 vendor/etc/tunings.txt
 
-# Fingerprint
+# Fingerprint (FPC)
+vendor/app/SensorTestTool/SensorTestTool.apk
+vendor/etc/init/init.fpc1540_ko.rc
+vendor/etc/permissions/com.fingerprints.extension.xml
+vendor/etc/vintf/manifest/manifest_fpc.xml
+vendor/framework/com.fingerprints.extension.jar
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
+
+# Fingerprint (Goodix)
 vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so

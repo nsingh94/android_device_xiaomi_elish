@@ -170,6 +170,12 @@
         <fqname>@1.0::IQspmhal/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>com.fingerprints.extension</name>
+        <transport>hwbinder</transport>
+        <fqname>@3.0::IFingerprintSensorTest/default</fqname>
+        <fqname>@3.0::IFingerprintNavigation/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.xiaomi.hardware.fx.tunnel</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IMiFxTunnel/default</fqname>
