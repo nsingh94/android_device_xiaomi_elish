@@ -54,6 +54,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
 
+# Recovery
+$(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.elish.rc
