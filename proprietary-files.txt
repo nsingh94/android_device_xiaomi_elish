@@ -50,9 +50,9 @@ vendor/lib/rfsa/adsp/misound_res_spk.bin
 vendor/lib/rfsa/adsp/misound_res_spk4ch.bin
 
 # Audio
-vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.elish.so
+vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.elish.so;FIX_SONAME
 vendor/lib/vndk/libxlog.so
-vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_elish.so
+vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_elish.so;FIX_SONAME
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudiocloudctrl.so
 vendor/lib/libaudioroute_ext.so
@@ -398,7 +398,7 @@ vendor/etc/init/init.fpc1540_ko.rc
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/etc/vintf/manifest/manifest_fpc.xml
 vendor/framework/com.fingerprints.extension.jar
-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
 
 # Fingerprint (Goodix)
 vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so
