@@ -23,10 +23,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('LEGACY_MIFARE_READER=1'),
     ('vendor/lib/libaudioroute_ext.so'): blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
-    'vendor/lib/hw/audio.primary.alioth.so': blob_fixup()
+    'vendor/lib/hw/audio.primary.elish.so': blob_fixup()
         .binary_regex_replace(
             b'/vendor/lib/liba2dpoffload.so',
-            b'liba2dpoffload_alioth.so\x00\x00\x00\x00\x00',
+            b'liba2dpoffload_elish.so\x00\x00\x00\x00\x00',
         )
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib64/camera/components/com.mi.node.watermark.so': blob_fixup()
@@ -71,7 +71,7 @@ namespace_imports = [
 ]
 
 module = ExtractUtilsModule(
-    'alioth',
+    'elish',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

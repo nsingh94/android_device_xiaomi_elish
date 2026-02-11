@@ -5,8 +5,8 @@
 //
 
 cc_library_static {
-    name: "libvariant_xiaomi_alioth",
-    srcs: ["libvariant_xiaomi_alioth.cpp"],
+    name: "libvariant_xiaomi_elish",
+    srcs: ["libvariant_xiaomi_elish.cpp"],
     header_libs: ["//device/xiaomi/sm8250-common:libvariant_headers"],
     recovery_available: true,
 }

@@ -33,7 +33,7 @@ vendor.audio.offload.buffer.size.kb=256
 vendor.audio_hal.period_multiplier=2
 
 # Audio hardware
-ro.hardware.audio.primary=alioth
+ro.hardware.audio.primary=elish
 
 # Display
 ro.vendor.display.paneltype=2

@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
     libpiex_shim
 
 # Init
-$(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_alioth)
+$(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_elish)
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -49,4 +49,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
+$(call inherit-product, vendor/xiaomi/elish/elish-vendor.mk)
