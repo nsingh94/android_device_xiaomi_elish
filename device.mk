@@ -29,9 +29,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
-# Init
-$(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_elish)
-
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayDevice \
