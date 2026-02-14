@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     LineageSystemUIOverlayDevice \
     SystemUIOverlayDevice
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.elish.rc
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
