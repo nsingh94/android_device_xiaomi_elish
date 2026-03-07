@@ -53,5 +53,5 @@ vendor.display.enable_hdr10_gpu_target=1
 vendor.display.idle_time=1100
 
 # Fingerprint
-persist.vendor.fingerprint.sensor_location=1080|965|115|local:4630946736638489729
+persist.vendor.fingerprint.sensor_location=1385|0|115
 persist.vendor.fingerprint.type=side
