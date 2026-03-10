@@ -19,6 +19,7 @@ TARGET_SCREEN_DENSITY := 320
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/xiaomi/elish.config
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := elish
