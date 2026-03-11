@@ -47,6 +47,7 @@ PRODUCT_PACKAGES += \
     LineageDialerOverlayDevice \
     LineageSettingsOverlayDevice \
     LineageSystemUIOverlayDevice \
+    SettingsProviderOverlayDevice \
     SystemUIOverlayDevice
 
 # Permissions
