@@ -393,11 +393,7 @@ product/etc/displayconfig/display_id_4630946481717202305.xml:vendor/etc/displayc
 product/etc/displayconfig/display_id_4630946545580055169.xml:vendor/etc/displayconfig/display_id_4630946545580055169.xml
 
 # Fingerprint (FPC)
-vendor/app/SensorTestTool/SensorTestTool.apk
 vendor/etc/init/init.fpc1540_ko.rc
-vendor/etc/permissions/com.fingerprints.extension.xml
-vendor/etc/vintf/manifest/manifest_fpc.xml
-vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
 
 # Fingerprint (Goodix)
