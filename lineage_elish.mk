@@ -14,6 +14,9 @@ $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 # Inherit from elish device
 $(call inherit-product, device/xiaomi/elish/device.mk)
 
+# Optional GApps (only if present)
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+
 PRODUCT_NAME := lineage_elish
 PRODUCT_DEVICE := elish
 PRODUCT_MANUFACTURER := Xiaomi
