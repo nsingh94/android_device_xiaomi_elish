@@ -33,6 +33,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
+# Diplay configs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/displayconfig/display_id_4630946481717202305.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946481717202305.xml \
+    $(LOCAL_PATH)/displayconfig/display_id_4630946545580055169.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946545580055169.xml
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.xiaomi
