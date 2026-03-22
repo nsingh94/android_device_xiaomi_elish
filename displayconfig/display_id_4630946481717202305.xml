@@ -3,14 +3,28 @@
 <displayConfiguration>
     <!-- Global Brightness-Nit mapping -->
     <screenBrightnessMap>
-        <point>
-            <value>0.0</value>
-            <nits>2.0</nits>
-        </point>
-        <point>
-            <value>1.0</value>
-            <nits>500</nits>
-        </point>
+        <!-- MIUI-style, AOSP-safe, 2.0 → 500 nits -->
+        <point><value>0.00</value><nits>2.0</nits></point>
+        <point><value>0.05</value><nits>6.0</nits></point>
+        <point><value>0.10</value><nits>10.0</nits></point>
+        <point><value>0.15</value><nits>15.0</nits></point>
+        <point><value>0.20</value><nits>21.0</nits></point>
+        <point><value>0.25</value><nits>27.0</nits></point>
+        <point><value>0.30</value><nits>36.0</nits></point>
+        <point><value>0.35</value><nits>52.0</nits></point>
+        <point><value>0.40</value><nits>71.0</nits></point>
+        <point><value>0.45</value><nits>87.0</nits></point>
+        <point><value>0.50</value><nits>106.0</nits></point>
+        <point><value>0.55</value><nits>130.0</nits></point>
+        <point><value>0.60</value><nits>169.0</nits></point>
+        <point><value>0.65</value><nits>196.0</nits></point>
+        <point><value>0.70</value><nits>248.0</nits></point>
+        <point><value>0.75</value><nits>300.0</nits></point>
+        <point><value>0.80</value><nits>350.0</nits></point>
+        <point><value>0.85</value><nits>400.0</nits></point>
+        <point><value>0.90</value><nits>433.0</nits></point>
+        <point><value>0.95</value><nits>466.0</nits></point>
+        <point><value>1.00</value><nits>500.0</nits></point>
     </screenBrightnessMap>
     <ambientLightHorizonLong>3000</ambientLightHorizonLong>
     <ambientLightHorizonShort>1000</ambientLightHorizonShort>
