@@ -370,6 +370,11 @@
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
     <bool name="config_dozePulsePickup">false</bool>
 
+    <!-- Whether should ignore app requested orientation in response to an app
+         calling Activity#setRequestedOrientation. See
+         LetterboxUiController#shouldIgnoreRequestedOrientation for details. -->
+    <bool name="config_letterboxIsPolicyForIgnoringRequestedOrientationEnabled">true</bool>
+
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
     <integer name="config_shutdownBatteryTemperature">680</integer>
 </resources>
