@@ -39,17 +39,7 @@ vendor.audio_hal.period_multiplier=3
 ro.hardware.audio.primary=elish
 
 # Display
-ro.vendor.display.paneltype=2
-ro.vendor.display.platform_8250=true
-ro.vendor.display.touch.idle.enable=true
-ro.vendor.display.type=lcd
-vendor.display.comp_mask=2
-vendor.display.defer_fps_frame_count=2
-vendor.display.disable_idle_time_hdr=1
-vendor.display.disable_idle_time_video=1
-vendor.display.enable_allow_idle_fallback=1
 vendor.display.enable_async_powermode=1
-vendor.display.enable_hdr10_gpu_target=1
 vendor.display.idle_time=1100
 
 # Fingerprint
