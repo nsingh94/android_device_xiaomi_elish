@@ -377,9 +377,6 @@
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">1</integer>
 
-    <!-- If true, the display will be shifted around in ambient mode. -->
-    <bool name="config_enableBurnInProtection">true</bool>
-
     <!-- Whether should ignore app requested orientation in response to an app
          calling Activity#setRequestedOrientation. See
          LetterboxUiController#shouldIgnoreRequestedOrientation for details. -->
