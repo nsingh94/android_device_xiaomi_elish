@@ -38,6 +38,12 @@ vendor.audio_hal.period_multiplier=3
 # Audio hardware
 ro.hardware.audio.primary=elish
 
+# Bluetooth
+bluetooth.hardware.power.idle_cur_ma=6
+bluetooth.hardware.power.operating_voltage_mv=3700
+bluetooth.hardware.power.rx_cur_ma=28
+bluetooth.hardware.power.tx_cur_ma=36
+
 # Display
 ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
