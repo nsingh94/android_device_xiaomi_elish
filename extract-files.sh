@@ -21,9 +21,9 @@ function blob_fixup() {
 LEGACY_MIFARE_READER=1
 EOF
             ;;
-        vendor/lib/hw/audio.primary.alioth.so)
+        vendor/lib/hw/audio.primary.elish.so)
             [ "$2" = "" ] && return 0
-            sed -i "s|/vendor/lib/liba2dpoffload\.so|liba2dpoffload_alioth\.so\x00\x00\x00\x00\x00|g" "${2}"
+            sed -i "s|/vendor/lib/liba2dpoffload\.so|liba2dpoffload_elish\.so\x00\x00\x00\x00\x00\x00|g" "${2}"
             ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             [ "$2" = "" ] && return 0
@@ -57,7 +57,7 @@ fi
 
 set -e
 
-export DEVICE=alioth
+export DEVICE=elish
 export DEVICE_COMMON=sm8250-common
 export VENDOR=xiaomi
 export VENDOR_COMMON=${VENDOR}

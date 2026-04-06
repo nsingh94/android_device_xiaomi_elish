@@ -8,6 +8,7 @@
 function vendor_imports() {
     cat <<EOF >>"$1"
 		"hardware/qcom-caf/common/libqti-perfd-client",
+		"hardware/xiaomi",
 		"vendor/qcom/opensource/display",
 EOF
 }
@@ -20,7 +21,7 @@ fi
 
 set -e
 
-export DEVICE=alioth
+export DEVICE=elish
 export DEVICE_COMMON=sm8250-common
 export VENDOR=xiaomi
 export VENDOR_COMMON=${VENDOR}
