@@ -70,6 +70,9 @@ function blob_fixup() {
 LEGACY_MIFARE_READER=0
 EOF
             ;;
+        vendor/lib64/libril-qc-hal-qmi.so)
+            sed -i 's|ro.product.vendor.device|ro.vendor.radio.midevice|g' "${2}"
+            ;;
     esac
 }
 
