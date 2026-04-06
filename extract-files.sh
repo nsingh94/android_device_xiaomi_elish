@@ -7,10 +7,6 @@
 
 function blob_fixup() {
     case "${1}" in
-        vendor/etc/init/init.batterysecret.rc)
-            [ "$2" = "" ] && return 0
-            sed -i "/seclabel u:r:batterysecret:s0/d" "${2}"
-            ;;
         vendor/etc/libnfc-nci.conf)
             [ "$2" = "" ] && return 0
             grep -q "LEGACY_MIFARE_READER=1" "${2}" || cat << EOF >> "${2}"
