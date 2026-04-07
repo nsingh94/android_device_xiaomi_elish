@@ -233,8 +233,6 @@ drm.service.enabled=true
 
 # Fingerprint
 persist.vendor.qfp=false
-persist.vendor.fingerprint.sensor_location=1385|0|115|local:4630946481717202305,1385|0|115|local:4630946545580055169
-persist.vendor.fingerprint.type=side
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
