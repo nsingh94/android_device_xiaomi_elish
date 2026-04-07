@@ -392,7 +392,6 @@ vendor/etc/tunings.txt
 vendor/app/SensorTestTool/SensorTestTool.apk
 vendor/etc/init/init.fpc1540_ko.rc
 vendor/etc/permissions/com.fingerprints.extension.xml
-vendor/etc/vintf/manifest/manifest_fpc.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
 
