@@ -146,6 +146,9 @@ vendor.audio.camera.unsupport_low_latency=true
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio_hal.period_multiplier=3
 
+# Audio hardware
+ro.hardware.audio.primary=elish
+
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hardware.power.operating_voltage_mv=3300
