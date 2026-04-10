@@ -378,19 +378,6 @@
          LetterboxUiController#shouldIgnoreRequestedOrientation for details. -->
     <bool name="config_letterboxIsPolicyForIgnoringRequestedOrientationEnabled">true</bool>
 
-    <!-- The device supports freeform window management. Windows have title bars and can be moved
-         and resized. If you set this to true, you also need to add
-         PackageManager.FEATURE_FREEFORM_WINDOW_MANAGEMENT feature to your device specification.
-         The duplication is necessary, because this information is used before the features are
-         available to the system.-->
-    <bool name="config_freeformWindowManagement">true</bool>
-
-    <!-- Whether desktop mode is supported on the current device  -->
-    <bool name="config_isDesktopModeSupported">true</bool>
-
-    <!-- Whether the current device's internal display can host desktop sessions.  -->
-    <bool name="config_canInternalDisplayHostDesktops">true</bool>
-
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
     <integer name="config_shutdownBatteryTemperature">680</integer>
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
