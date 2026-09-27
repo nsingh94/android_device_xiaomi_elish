@@ -49,11 +49,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ApertureOverlayDevice \
     FrameworkResOverlayDevice \
-    LineageDialerOverlayDevice \
     LineageSettingsOverlayDevice \
-    LineageSystemUIOverlayDevice \
-    SettingsProviderOverlayDevice \
-    SystemUIOverlayDevice
+    SettingsProviderOverlayDevice
 
 # Permissions
 PRODUCT_COPY_FILES += \
