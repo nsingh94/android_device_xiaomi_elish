@@ -16,7 +16,6 @@ $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi
 
 # Audio configs
 PRODUCT_COPY_FILES += \
